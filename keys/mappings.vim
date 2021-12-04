@@ -17,11 +17,20 @@ inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
 
 " Alternate way to save
-nnoremap <C-s> :w<CR>
+"nnoremap <C-s> :w<CR>
 " Alternate way to quit
-nnoremap <C-Q> :wq!<CR>
+"nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
-nnoremap <C-c> <Esc>
+"nnoremap <C-c> <Esc>
+" EXIT
+"noremap <C-.> :exit<CR>
+
+inoremap <C-s> <esc>:w<cr>                 " save files
+nnoremap <C-s> :w<cr>
+inoremap <C-d> <esc>:wq!<cr>               " save and exit
+nnoremap <C-d> :wq!<cr>
+inoremap <C-q> <esc>:exit<cr>               " quit discarding changes
+nnoremap <C-q> :exit<cr>
 
 " Better tabbing
 vnoremap < <gv
@@ -39,3 +48,9 @@ nnoremap <Leader>O O<Esc>^Da
 " Open nerdTree with keyshortcut
 let mapleader = ","
 nmap <leader>ne :NERDTree<cr>
+
+" TABS
+noremap <Tab> :tabnext<CR>
+noremap <S-Tab> :tabprevious<CR>
+nnoremap <C-t> :tabnew <bar> :NERDTree<CR>
+noremap <C-e> :tabclose<CR>
