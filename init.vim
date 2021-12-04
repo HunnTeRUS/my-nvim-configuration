@@ -66,3 +66,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ }
 let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
 let g:NERDTreeGitStatusShowIgnored = 1 " a heavy feature may cost much more time. default: 0
+
+:hi TabLineFill ctermfg=LightCyan ctermbg=LightCyan
+:hi TabLine ctermfg=DarkCyan ctermbg=LightCyan
+:hi TabLineSel ctermfg=black ctermbg=DarkCyan

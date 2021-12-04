@@ -32,6 +32,8 @@ nnoremap <C-d> :wq!<cr>
 inoremap <C-q> <esc>:exit<cr>               " quit discarding changes
 nnoremap <C-q> :exit<cr>
 
+inoremap ;; <Esc>
+
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
@@ -50,7 +52,7 @@ let mapleader = ","
 nmap <leader>ne :NERDTree<cr>
 
 " TABS
-noremap <Tab> :tabnext<CR>
+noremap <C-Tab> :tabnext<CR>
 noremap <S-Tab> :tabprevious<CR>
 nnoremap <C-t> :tabnew <bar> :NERDTree<CR>
 noremap <C-e> :tabclose<CR>
