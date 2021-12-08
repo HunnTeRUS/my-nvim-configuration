@@ -14,6 +14,7 @@ luafile ~/.config/nvim/lua/lsp/json-lsp.lua
 luafile ~/.config/nvim/lua/lsp/python-lsp.lua
 luafile ~/.config/nvim/lua/lsp/tsserver-lsp.lua
 luafile ~/.config/nvim/lua/lsp/yaml-lsp.lua
+source ~/.config/nvim/plug-config/vimspector.vim
 
 set clipboard=unnamedplus
 set relativenumber

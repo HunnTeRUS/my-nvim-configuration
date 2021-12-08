@@ -8,6 +8,9 @@ nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
+nnoremap <silent> mm <cmd>lua vim.lsp.buf.rename()<CR>
+" close rename win use <C-c> in insert mode or `q` in noremal mode or `:q`
+
 autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.go lua vim.lsp.buf.formatting_sync(nil, 100)

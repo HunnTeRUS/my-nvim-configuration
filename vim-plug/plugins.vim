@@ -49,12 +49,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Lines
     Plug 'ericbn/vim-relativize'
 
+    "Airline vim
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
+    "Git plugin
     Plug 'preservim/nerdtree' |
                 \ Plug 'Xuyuanp/nerdtree-git-plugin'
 		
+
     Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
@@ -64,4 +67,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'ryanoasis/vim-devicons'
 
+    Plug 'puremourning/vimspector'
+    Plug 'szw/vim-maximizer'
 call plug#end()

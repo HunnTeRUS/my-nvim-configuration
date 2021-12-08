@@ -52,7 +52,13 @@ let mapleader = ","
 nmap <leader>ne :NERDTree<cr>
 
 " TABS
-noremap <C-Tab> :tabnext<CR>
+noremap <Tab> :tabnext<CR>
 noremap <S-Tab> :tabprevious<CR>
 nnoremap <C-t> :tabnew <bar> :NERDTree<CR>
 noremap <C-e> :tabclose<CR>
+
+" No more Arrow keys, deal with it
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
