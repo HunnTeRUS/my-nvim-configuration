@@ -46,17 +46,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neovim/nvim-lspconfig'    
     Plug 'hrsh7th/nvim-compe'
 
-    "Lines
-    Plug 'ericbn/vim-relativize'
-
     "Airline vim
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
     "Git plugin
-    Plug 'preservim/nerdtree' |
-                \ Plug 'Xuyuanp/nerdtree-git-plugin'
-		
+    Plug 'Xuyuanp/nerdtree-git-plugin'
 
     Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'
@@ -67,6 +62,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'ryanoasis/vim-devicons'
 
-    Plug 'puremourning/vimspector'
-    Plug 'szw/vim-maximizer'
+    "Plugin for search engine inside nvim
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'nvim-telescope/telescope-fzy-native.nvim'
 call plug#end()
