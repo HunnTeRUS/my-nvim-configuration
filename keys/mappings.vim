@@ -62,3 +62,6 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+noremap <C-f> :Telescope find_files<CR>
+tnoremap ;; <C-\><C-n>

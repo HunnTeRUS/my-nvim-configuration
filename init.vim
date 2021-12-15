@@ -4,6 +4,7 @@ source ~/.config/nvim/vim-plug/plugins.vim
 
 luafile ~/.config/nvim/lua/plugins/compe-config.lua
 source ~/.config/nvim/plug-config/lsp-config.vim
+source ~/.config/nvim/plug-config/telescope.vim
 
 " Config files:
 luafile ~/.config/nvim/lua/lsp/bash-lsp.lua
