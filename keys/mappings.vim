@@ -65,3 +65,4 @@ noremap <Right> <NOP>
 
 noremap <C-f> :Telescope find_files<CR>
 tnoremap ;; <C-\><C-n>
+noremap <Leader>t :vsplit term://zsh<CR>
