@@ -62,7 +62,11 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+noremap <S>k k <NOP>
 
 noremap <C-f> :Telescope find_files<CR>
 tnoremap ;; <C-\><C-n>
 noremap <Leader>t :vsplit term://zsh<CR>
+
+" Comment lines
+noremap <Leader>cc 
