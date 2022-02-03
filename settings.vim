@@ -32,8 +32,23 @@ set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
-set clipboard+=unnamedplus               " Copy paste between vim and everything else
+set clipboard+=unnamed,unnamedplus
+set relativenumber
+set encoding=utf8
 "set autochdir                           " Your working directory will always be the same as your working directory
+
+let g:clipboard = {
+      \   'name': 'myClipboard',
+      \   'copy': {
+      \      '+': 'pbcopy',
+      \      '*': 'pbcopy',
+      \   },
+      \   'paste': {
+      \      '+': '+',
+      \      '*': '*',
+      \   },
+      \   'cache_enabled': 1,
+      \ }
 
 filetype plugin on
 

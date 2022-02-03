@@ -17,10 +17,6 @@ luafile ~/.config/nvim/lua/lsp/tsserver-lsp.lua
 luafile ~/.config/nvim/lua/lsp/yaml-lsp.lua
 source ~/.config/nvim/plug-config/vimspector.vim
 
-set clipboard=unnamedplus
-set relativenumber
-set encoding=utf8
-
 " AIRLINE CUSTOMIZATION
 execute pathogen#infect()
 " air-line
