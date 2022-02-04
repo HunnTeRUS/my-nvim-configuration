@@ -3,7 +3,7 @@ let g:mapleader = "\<Space>"
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set nowrap                              " Display long lines as just one line
+"set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -32,23 +32,9 @@ set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
-set clipboard+=unnamed,unnamedplus
+set clipboard+=unnamedplus
 set relativenumber
 set encoding=utf8
-"set autochdir                           " Your working directory will always be the same as your working directory
-
-let g:clipboard = {
-      \   'name': 'myClipboard',
-      \   'copy': {
-      \      '+': 'pbcopy',
-      \      '*': 'pbcopy',
-      \   },
-      \   'paste': {
-      \      '+': '+',
-      \      '*': '*',
-      \   },
-      \   'cache_enabled': 1,
-      \ }
 
 filetype plugin on
 
@@ -56,3 +42,8 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+let g:markdown_fenced_languages = [
+      \ 'vim',
+      \ 'help'
+      \]

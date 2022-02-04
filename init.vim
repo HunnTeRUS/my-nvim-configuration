@@ -1,4 +1,4 @@
-source ~/.config/nvim/general/settings.vim
+source ~/.config/nvim/settings.vim
 source ~/.config/nvim/keys/mappings.vim
 source ~/.config/nvim/vim-plug/plugins.vim
 
@@ -68,3 +68,6 @@ let g:NERDTreeGitStatusShowIgnored = 1 " a heavy feature may cost much more time
 :hi TabLineFill ctermfg=LightCyan ctermbg=LightCyan
 :hi TabLine ctermfg=DarkCyan ctermbg=LightCyan
 :hi TabLineSel ctermfg=black ctermbg=DarkCyan
+
+let g:is_nvim = has('nvim')
+let g:is_vim8 = v:version >= 800 ? 1 : 0

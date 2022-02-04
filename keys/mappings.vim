@@ -8,22 +8,9 @@ nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
-" I hate escape more than anything else
-inoremap jk <Esc>
-inoremap kj <Esc>
-
 " Easy CAPS
 inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
-
-" Alternate way to save
-"nnoremap <C-s> :w<CR>
-" Alternate way to quit
-"nnoremap <C-Q> :wq!<CR>
-" Use control-c instead of escape
-"nnoremap <C-c> <Esc>
-" EXIT
-"noremap <C-.> :exit<CR>
 
 inoremap <C-s> <esc>:w<cr>                 " save files
 nnoremap <C-s> :w<cr>
@@ -65,11 +52,27 @@ noremap <Right> <NOP>
 noremap <S>k k <NOP>
 
 tnoremap ;; <C-\><C-n>
+
+" Opens a new terminal in vertical split
 noremap <Leader>t :vsplit term://zsh<CR>
 
 " Comment lines
 noremap <Leader>cc 
 
+"Search for all ocourrences of the phrase that you write
 nnoremap <C-f> :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ") })<CR>
 
+" CTRL + C now yank the selected
 vmap <C-C> "+y
+
+" Clears the vim highlighing
+noremap <C-l> :noh<CR>
+
+" Changes all ocourrences for the text that you have typed
+nnoremap <Leader>r :%s///g<Left><Left>
+nnoremap <Leader>rc :%s///gc<Left><Left><Left>
+
+xnoremap <Leader>r :s///g<Left><Left>
+xnoremap <Leader>rc :s///gc<Left><Left><Left>
+
+vnoremap * y/\V<C-R>=escape(@",'/\')<CR><CR>

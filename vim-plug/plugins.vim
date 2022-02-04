@@ -52,14 +52,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     "Git plugin
     Plug 'Xuyuanp/nerdtree-git-plugin'
-
-    Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
 
+    " Prettier for code
     Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
+    " Used to shows icons on screen
     Plug 'ryanoasis/vim-devicons'
 
     "Plugin for search engine inside nvim
@@ -67,5 +67,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
+    " Used to comment whe whole line or selected lines
     Plug 'preservim/nerdcommenter'
+
 call plug#end()
