@@ -32,16 +32,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
+
     " File Explorer
     Plug 'scrooloose/NERDTree'
+
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    " Colorize variables and functions
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
     " Styled components
     Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+
     " Go extension
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
     " lsp
     Plug 'neovim/nvim-lspconfig'    
     Plug 'hrsh7th/nvim-compe'
@@ -70,5 +73,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Used to comment whe whole line or selected lines
     Plug 'preservim/nerdcommenter'
+
+    " Viminspector to debug
+    Plug 'puremourning/vimspector'
+
+    Plug 'hrsh7th/vim-vsnip'
+    Plug 'hrsh7th/vim-vsnip-integ'
 
 call plug#end()

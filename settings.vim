@@ -36,6 +36,9 @@ set clipboard+=unnamedplus
 set relativenumber
 set encoding=utf8
 
+set completeopt=menuone,noselect
+
+
 filetype plugin on
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
