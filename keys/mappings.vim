@@ -1,17 +1,14 @@
-" Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
-
 " Use alt + hjkl to resize windows
 nnoremap <M-j>    :resize -2<CR>
 nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
-" Easy CAPS
+" EASY CAPS - Shift + u = upper case, u = lower case
 inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
 
+" Save and exit easier way 
 inoremap <C-s> <esc>:w<cr>                 " save files
 nnoremap <C-s> :w<cr>
 inoremap <C-d> <esc>:wq!<cr>               " save and exit
@@ -31,17 +28,14 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da 
-
 " Open nerdTree with keyshortcut
 let mapleader = ","
-nmap <leader>ne :NERDTree<cr>
+nmap <leader>ne :Exp<cr>
 
 " TABS
 noremap <Tab> :tabnext<CR>
 noremap <S-Tab> :tabprevious<CR>
-nnoremap <C-t> :tabnew <bar> :NERDTree<CR>
+nnoremap <C-t> :tabnew<CR>
 noremap <C-e> :tabclose<CR>
 
 " No more Arrow keys, deal with it
@@ -63,10 +57,10 @@ noremap <Leader>cc
 nnoremap <C-f> :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ") })<CR>
 
 " CTRL + C now yank the selected
-vmap <C-C> "+y
+vmap <C-c> "+y
 
 " Clears the vim highlighing
-noremap <C-l> :noh<CR>
+"noremap <C-p> :noh<CR>
 
 " Changes all ocourrences for the text that you have typed
 nnoremap <Leader>r :%s///g<Left><Left>
@@ -93,3 +87,6 @@ nmap <Leader>dj <Plug>VimspectorStepOver
 " Keys for completion
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+
+"nmap <Leader>rr :NERDTreeFocus<cr>R<c-w><c-p>
+noremap <C-l> :noh<CR>

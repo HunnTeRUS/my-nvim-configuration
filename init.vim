@@ -16,6 +16,7 @@ luafile ~/.config/nvim/lua/lsp/python-lsp.lua
 luafile ~/.config/nvim/lua/lsp/tsserver-lsp.lua
 luafile ~/.config/nvim/lua/lsp/yaml-lsp.lua
 
+
 " AIRLINE CUSTOMIZATION
 execute pathogen#infect()
 " air-line
@@ -70,3 +71,8 @@ let g:NERDTreeGitStatusShowIgnored = 1 " a heavy feature may cost much more time
 
 let g:is_nvim = has('nvim')
 let g:is_vim8 = v:version >= 800 ? 1 : 0
+
+" For 'Yggdroot/indentLine' and 'lukas-reineke/indent-blankline.nvim' "
+let g:indentLine_fileTypeExclude = ['dashboard']
+" For 'ntpeters/vim-better-whitespace' "
+let g:better_whitespace_filetypes_blacklist = ['dashboard']

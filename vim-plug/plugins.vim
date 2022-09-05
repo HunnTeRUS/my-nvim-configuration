@@ -34,7 +34,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
 
     " File Explorer
-    Plug 'scrooloose/NERDTree'
+    "Plug 'scrooloose/NERDTree'
 
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
@@ -54,8 +54,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
 
     "Git plugin
-    Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tpope/vim-fugitive'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
 
