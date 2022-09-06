@@ -20,7 +20,7 @@ module.exports = {
         // letter spacing as a relative unit
         letterSpacing: 0,
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-        cursorColor: 'rgba(248,28,229,0.8)',
+        cursorColor: 'rgba(226, 226, 226, 0.8)',
         // terminal text color under BLOCK cursor
         cursorAccentColor: '#000',
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
@@ -31,9 +31,9 @@ module.exports = {
         foregroundColor: '#fff',
         // terminal background color
         // opacity is only supported on macOS
-        backgroundColor: '#000',
+        backgroundColor: '#fff',
         // terminal selection color
-        selectionColor: 'rgba(248,28,229,0.3)',
+        selectionColor: 'rgba(88, 105, 217, 0.8)',
         // border color (window, tabs)
         borderColor: '#333',
         // custom CSS to embed in the main window
@@ -88,7 +88,7 @@ module.exports = {
         // - Example: `C:\\Program Files\\Git\\bin\\bash.exe`
         //
         // PowerShell on Windows
-        // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powersell.exe`
+        // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
         //
         // Cygwin
         // - Example: `C:\\cygwin64\\bin\\bash.exe`
@@ -123,10 +123,10 @@ module.exports = {
         webLinksActivationKey: '',
         // if `false` (without backticks and without quotes), Hyper will use ligatures provided by some fonts
         disableLigatures: true,
-        
+
 	altIsMeta: true,
         // for advanced config flags please refer to https://hyper.is/#cfg
-        
+
         activeTab: '👽'
     },
     // a list of plugins to fetch and install from npm
@@ -137,7 +137,9 @@ module.exports = {
     //   `project#1.0.1`
     plugins: [
         "hyper-custom-controls",
-        "hyper-omni-theme",
+        // "hyper-omni-theme",
+        // "hyper-dracula",
+        "hyper-chesterish",
         "hyper-font-ligatures",
         "hyper-active-tab"
     ],
@@ -151,4 +153,4 @@ module.exports = {
     	'window:hamburgerMenu': '',
     }
 };
-//# sourceMappingURL=config-default.js.maph
+//# sourceMappingURL=config-default.js.map
