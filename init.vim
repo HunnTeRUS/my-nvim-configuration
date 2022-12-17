@@ -8,6 +8,7 @@ source ~/.config/nvim/plug-config/telescope.vim
 
 " Config files:
 luafile ~/.config/nvim/lua/lsp/bash-lsp.lua
+luafile ~/.config/nvim/lua/lsp/docker-lsp.lua
 luafile ~/.config/nvim/lua/lsp/eslint-lsp.lua
 luafile ~/.config/nvim/lua/lsp/go-lsp.lua
 luafile ~/.config/nvim/lua/lsp/java-lsp.lua

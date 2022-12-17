@@ -30,7 +30,7 @@ nnoremap <C-l> <C-w>l
 
 " Open nerdTree with keyshortcut
 let mapleader = ","
-nmap <leader>ne :Exp<cr>
+nmap <leader>ne :NERDTree<cr>
 
 " TABS
 noremap <Tab> :tabnext<CR>
@@ -60,7 +60,7 @@ nnoremap <C-f> :lua require('telescope.builtin').grep_string({ search = vim.fn.i
 vmap <C-c> "+y
 
 " Clears the vim highlighing
-"noremap <C-p> :noh<CR>
+noremap <C-l> :noh<CR>
 
 " Changes all ocourrences for the text that you have typed
 nnoremap <Leader>r :%s///g<Left><Left>
@@ -88,5 +88,4 @@ nmap <Leader>dj <Plug>VimspectorStepOver
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
-"nmap <Leader>rr :NERDTreeFocus<cr>R<c-w><c-p>
-noremap <C-l> :noh<CR>
+nmap <Leader>rr :NERDTreeFocus<cr>R<c-w><c-p>
